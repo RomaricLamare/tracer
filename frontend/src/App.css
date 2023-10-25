@@ -4,27 +4,26 @@ body {
   font-family: Montserrat;
   height: 100vh;
 
-  ul,
-  li {
+  :is(ul, li) {
     list-style: none;
   }
 
-  a {
+  :is(a) {
     text-decoration: none;
     color: rgb(233, 232, 232);
   }
 
   .App {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  max-width: 100vw;
-}
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+  }
 
-.app_main {
-  display: flex;
-  flex: 1;
-  overflow: hidden;
-  height: 100%;
-}
+  .app_main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    height: 100%;
+  }
 }
